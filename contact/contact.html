@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>견적문의</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1><a href="#">Project . J</a></h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- inner -->
+        </header><!-- header -->
+
+
+        <main id="main">
+            <h2>견적문의</h2>
+            <p>귀하의 요청 사항과 참고 사이트를 꼼꼼히 검토한 후 최적의 견적가를 산출해 드리겠습니다.</p>
+
+            <div class="request">
+                <form>
+                    <h3>프로젝트 분야 선택</h3>
+                    <fieldset class="field_01">
+                        <legend>프로젝트 분야 선택</legend>
+                        <ul>
+                            <li><input type="checkbox" id="kind1" checked><label for="kind1">웹</label></li>
+                            <li><input type="checkbox" id="kind2"><label for="kind2">모바일웹</label></li>
+                            <li><input type="checkbox" id="kind3"><label for="kind3">반응형웹</label></li>
+                            <li><input type="checkbox" id="kind4"><label for="kind4">쇼핑몰</label></li>
+                            <li><input type="checkbox" id="kind5"><label for="kind5">솔루션개발</label></li>
+                            <li><input type="checkbox" id="kind6"><label for="kind6">기타</label></li>
+                        </ul>
+                    </fieldset>
+
+
+                    <h3>프로젝트 정보 입력</h3>
+                    <fieldset class="field_02">
+                        <legend>프로젝트 정보 입력</legend>
+                        <div class="form_item_01">
+                            <h4>프로젝트 예산</h4>
+                            <select>
+                                <option selected disabled>예산을 선택해 주세요.</option>
+                                <option>1천만원 이하</option>
+                                <option>1천만원 ~ 5천만원</option>
+                                <option>5천만원 ~ 1억원</option>
+                                <option>1억원 ~ 3억원</option>
+                                <option>3억원 이상</option>
+                                <option>미정</option>
+                            </select>
+                        </div>
+
+                        <div class="form_item_02">
+                            <h4>프로젝트 기간</h4>
+                            <select>
+                                <option selected disabled>기간을 선택해 주세요.</option>
+                                <option>3개월</option>
+                                <option>6개월</option>
+                                <option>1년 이상</option>
+                                <option>직접 입력</option>
+                            </select>
+                        </div>
+
+                        <div class="form_item_03">
+                            <h4>현재사이트</h4>
+                            <input type="text" placeholder="홈페이지가 있으신 경우 주소(URL)을 입력해 주세요.">
+                        </div>
+
+                        <div class="form_item_04">
+                            <h4>참고사이트</h4>
+                            <input type="text" placeholder="참고사이트가 있으신 경우 주소(URL)을 입력해 주세요.">
+                        </div>
+
+                        <div class="form_item_05">
+                            <h4>문의내용 <em>*</em></h4>
+                            <textarea placeholder="문의 내용을 입력해 주세요." required></textarea>
+                        </div>
+
+                        <div class="form_item_06">
+                            <h4>첨부파일</h4>
+                            <input type="file" multiple
+                                accept=".pdf, .ppt, .pptx, .xls, .xlsx, .doc, .docx, .jpg, .png, .zip, .hwp">
+                        </div>
+                    </fieldset>
+
+
+                    <h3>의뢰자 정보 입력</h3>
+                    <fieldset class="field_03">
+                        <legend>의뢰자 정보 입력</legend>
+                        <div class="form_item_07">
+                            <h4>회사명 <em>*</em></h4>
+                            <input type="text" placeholder="회사명을 입력해 주세요." required>
+                        </div>
+                        <div class="form_item_08">
+                            <h4>담당자/직급 <em>*</em></h4>
+                            <input type="text" placeholder="이름과 직급을 입력해 주세요." required>
+                        </div>
+                        <div class="form_item_09">
+                            <h4>연락처 <em>*</em></h4>
+                            <input type="text" placeholder="숫자만 입력해 주세요." required>
+                        </div>
+                        <div class="form_item_10">
+                            <h4>이메일</h4>
+                            <input type="text" placeholder="sample@sample.com">
+                        </div>
+                    </fieldset>
+
+
+
+                    <h3>개인정보동의서</h3>
+                    <div class="privacy">
+                        <div class="privacy_txt">
+                            <p>(주)프로젝트제이 (이하 회사)는 당 사이트 이용자의 개인정보보호를 위해 최선의 조치를 취하고자 노력하고 있으며, “정보통신망 이용촉진 및 정보보호 등에
+                                관한
+                                법률”
+                                등 관련법령에서 정보통신서비스제공자가 준수해야 할 개인정보보호에 관한 규정들을 충실히 이행하고 있습니다.</p>
+
+                            <p>회사는 당 개인정보취급방침을 통해 개인정보를 취급하는데 있어서 취해지는 조치들을 알려드리며, 개인정보취급방침을 개정하는 경우에는 웹사이트 공지사항을
+                                통하여
+                                공지합니다.</p>
+
+                            <p>회사의 개인정보취급방침은 다음과 같은 내용을 담고 있습니다.</p>
+
+
+                            <ol>
+                                <li>수집하는 개인정보의 항목 및 수집방법</li>
+                                <li>개인정보의 수집 및 이용목적</li>
+                                <li>개인정보의 제3자 제공</li>
+                                <li>개인정보의 보유 및 이용기간</li>
+                                <li>개인정보의 파기절차 및 방법</li>
+                                <li>개인정보주체의 권리와 그 행사방법</li>
+                                <li>개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항</li>
+                                <li>개인정보의 기술적/관리적 보호 대책</li>
+                                <li>개인정보 관리책임자 및 개인정보에 관한 민원서비스</li>
+                                <li>링크 사이트에 대한 책임</li>
+                                <li>기타 개인정보 취급에 관한 방침</li>
+                                <li>개정이력</li>
+                            </ol>
+                        </div>
+
+                        <fieldset class="agree">
+                            <legend>개인정보동의</legend>
+                            <div>
+                                <input type="radio" name="agree" id="no" checked><label for="no">동의하지 않음</label>
+                                <input type="radio" name="agree" id="yes"><label for="yes">동의함</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="btn">
+                            <legend>견적문의버튼</legend>
+                            <input type="submit" value="견적문의">
+                        </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer">&copy; Project . J Inc. All rights reserved.</footer>
+    </div><!-- wrap -->
+
+</body>
+
+</html>

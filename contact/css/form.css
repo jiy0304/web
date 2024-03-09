@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+::-webkit-scrollbar { width: 8px; height: 3px; background: rgba(0,0,0,0.1); }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.3); border-radius: 5px; }
+::selection { color: #fff; background: #000; }
+::placeholder { color: #ccc; }
+
+
+body { overflow-x: hidden; font-family: 'GmarketSans', sans-serif; font-size: 1.6rem; line-height: 1.5; color: #000; }
+#wrap { min-width: 320px; position: relative; }
+
+
+#header { position: fixed; left: 0; top: 0; width: 100%; background: #2c7afd; z-index: 1; }
+#header .inner { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; padding: 30px 5% 20px; }
+#header h1 a { color: #fff; display: block; font-size: 2.5rem; }
+#header .gnb { display: flex; }
+#header .gnb li a { transition: all .5s; display: block; padding: 0 30px; font-size: 2.5rem; color: #fff; font-weight: 700; opacity: 0.5; }
+#header .gnb li:last-child a,#header .gnb li:hover a { opacity: 1; }
+
+@media (max-width:1024px) {
+  #header .inner { gap: 30px; }
+  #header h1 { width: 100%; text-align: center; }
+  #header nav { width: 100%; }
+  #header .gnb { justify-content: center; }
+}
+
+#main { padding: 200px 10% 0; max-width: 1700px; margin: 0 auto; }
+#main h2 { font-size: 5rem; color: #2c7afd; }
+#main h2 + p { font-size: 2rem; }
+#main h3 { width: 100%; font-size: 2.5rem; padding: 80px 0 20px; }
+#main em { color: #2c7afd; }
+
+[class*="form_item"] { width: 100%; border: 1px solid #abbad3; align-items: center; display: flex; }
+[class*="form_item"] h4 { width: 150px; height: 100%; font-weight: 400; padding: 20px 20px 5px; }
+[class*="form_item"] h4 + * { width: calc(100% - 150px); height: 60px; }
+
+
+/* field_01 */
+.field_01 ul { display: flex; gap: 10px; flex-wrap: wrap; }
+.field_01 input[type="checkbox"] { appearance: none; }
+.field_01 input[type="checkbox"] + label { border: 1px solid #abbad3; border-radius: 50px; padding: 12px 50px 8px; display: inline-block; cursor: pointer; transition: all .3s; }
+.field_01 input[type="checkbox"]:checked + label { background: #2c7afd; color: #fff; border: 1px solid #2c7afd; }
+
+
+/* field_02 */
+.field_02 { display: flex; gap: 10px; flex-wrap: wrap; }
+.field_02 .form_item_01,.field_02 .form_item_02 { width: calc((100% - 10px) / 2); }
+.field_02 select { appearance: none; padding: 22px 20px; background: url('../images/select_icon.png') no-repeat right 25px top 25px; }
+.field_02 input { padding: 0 20px; }
+.field_02 textarea { height: 300px; padding: 20px; }
+.field_02 input[type="file"] { width: 100%; position: relative; padding: 20px; }
+.field_02 input[type="file"]::file-selector-button { font-family: 'GmarketSans', sans-serif; position: absolute; top: 0px; right: -4px; cursor: pointer; height: 100%; padding: 0px 40px; display: block; border: 0px; background: #abbad3; color: #fff; }
+.field_02 .form_item_06 h4 { background: #2c7afd; color: #fff; }
+
+@media (max-width:1024px) {
+  .field_02 .form_item_01,.field_02 .form_item_02 { width: 100%; }
+}
+
+/* field_03 */
+.field_03 { display: flex; gap: 10px; flex-wrap: wrap; }
+.field_03 div { width: calc((100% - 10px) / 2); }
+
+@media (max-width:1024px) {
+  .field_03 div { width: 100%; }
+}
+
+/* privacy */
+.privacy_txt { border: 1px solid #ddd; padding: 30px; height: 200px; overflow: auto; color: #999; }
+.privacy_txt p { padding: 0 0 20px; }
+.privacy_txt ol { list-style: decimal; padding: 20px 40px; }
+
+.privacy .agree { padding: 20px 0; }
+.privacy input[type="radio"] { appearance: none; }
+.privacy input[type="radio"] + label { position: relative; padding: 0 0 0 30px; margin: 0 30px 0 0; }
+.privacy input[type="radio"] + label:before { content: ''; display: inline-block; width: 20px; height: 20px; background: #eee url('../images/checkbox.png') no-repeat center; position: absolute; left: 0; top: -2px; transition: all .3s; }
+.privacy input[type="radio"]:checked + label:before { background: #eee url('../images/checkbox_checked.png') no-repeat center; }
+
+
+/* btn */
+.btn { text-align: center; padding: 100px 0; }
+.btn input[type="submit"] { cursor: pointer; background: #2c7afd; color: #fff; width: 200px; height: 50px; border-radius: 100px; }
+
+
+/* footer */
+#footer { background: #eee; padding: 80px 0; color: #999; text-align: center; }
+
