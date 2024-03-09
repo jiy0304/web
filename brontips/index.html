@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브로앤팁스</title>
+    <meta name="keywords" content="브로앤팁스">
+    <meta name="description" content="형제들에게 팁이 필요한 순간">
+
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="브로앤팁스">
+    <meta property="og:url" content="http://test.dothome.co.kr">
+    <meta property="og:image" content="images/common/og_img.jpg">
+    <meta property="og:description" content="브로앤팁스 | 형제들에게 팁이 필요한 순간">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/common/favicon.png">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+
+        <header id="header">
+            <div class="inner">
+                <div class="header_left">
+                    <h1><a href="index.html"><img src="images/common/logo.svg" alt="BRO & TIPS"></a></h1>
+
+                    <nav>
+                        <ul class="gnb">
+                            <li><a href="#">bro story</a>
+                                <svg viewBox="0 0 195 49">
+                                    <path fill="none" stroke="#0096FF" stroke-width="10" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        d="M189.935,6.842L23.903,16.45c-2.439,0.243-2.434,0.369,0.012,0.282l138.428,1.366c2.445-0.088,2.448-0.011,0.006,0.171L8.392,23.047 c-2.442,0.182-2.439,0.262,0.006,0.178l152.087,1.094c2.446-0.083,2.448-0.001,0.007,0.184L6.895,29.432 c-2.442,0.184-2.44,0.234,0.005,0.111l163.745-1.816c2.444-0.123,2.453,0.035,0.02,0.352L7.355,42.158">
+                                    </path>
+                                </svg>
+                            </li>
+                            <li><a href="#">products</a>
+                                <svg viewBox="0 0 195 49">
+                                    <path fill="none" stroke="#0096FF" stroke-width="10" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        d="M189.935,6.842L23.903,16.45c-2.439,0.243-2.434,0.369,0.012,0.282l138.428,1.366c2.445-0.088,2.448-0.011,0.006,0.171L8.392,23.047 c-2.442,0.182-2.439,0.262,0.006,0.178l152.087,1.094c2.446-0.083,2.448-0.001,0.007,0.184L6.895,29.432 c-2.442,0.184-2.44,0.234,0.005,0.111l163.745-1.816c2.444-0.123,2.453,0.035,0.02,0.352L7.355,42.158">
+                                    </path>
+                                </svg>
+                            </li>
+                            <li><a href="#">bro tips</a>
+                                <svg viewBox="0 0 195 49">
+                                    <path fill="none" stroke="#0096FF" stroke-width="10" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        d="M189.935,6.842L23.903,16.45c-2.439,0.243-2.434,0.369,0.012,0.282l138.428,1.366c2.445-0.088,2.448-0.011,0.006,0.171L8.392,23.047 c-2.442,0.182-2.439,0.262,0.006,0.178l152.087,1.094c2.446-0.083,2.448-0.001,0.007,0.184L6.895,29.432 c-2.442,0.184-2.44,0.234,0.005,0.111l163.745-1.816c2.444-0.123,2.453,0.035,0.02,0.352L7.355,42.158">
+                                    </path>
+                                </svg>
+                            </li>
+                        </ul>
+
+                        <div class="ham">
+                            <img src="images/common/icon_menu.svg" alt="" style="width: 25px;">
+                        </div>
+
+                        <div class="mgnb_wrap">
+                            <ul class="mgnb">
+                                <li><a href="#">bro story</a></li>
+                                <li><a href="#">products</a></li>
+                                <li><a href="#">bro tips</a></li>
+                            </ul>
+
+                            <div class="mgnb_close">
+                                <i class="bi bi-x-lg mgnb_close" aria-label="모바일메뉴닫기"></i>
+                            </div>
+                        </div><!-- mgnb_wrap -->
+                    </nav>
+                </div>
+
+                <div class="buy"><a href="#">buy</a></div>
+                <div class="store"><a href="#">store</a></div>
+            </div><!-- inner -->
+        </header><!-- header -->
+
+
+
+
+        <main id="main">
+
+            <section id="main_visual">
+                <div class="swiper mv">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="images/main/mv_01.jpg" alt="">
+                            <div class="mv_txt">
+                                <p>바르지 않은 듯 가볍고<br>
+                                    물과 땀에 강한 워터프루프 선크림</p>
+                                <h3>SUPER LIGHT</h3>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" data-swiper-autoplay="8000">
+                            <img src="images/main/mv_02.jpg" alt="">
+                            <div class="mv_txt">
+                                <p>초건성피부 형들의 피부를 보호하는,<br>
+                                    초고보습 수분크림</p>
+                                <h3>WINTER DEFENCE</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"><i class="bi bi-caret-left-fill"></i></div>
+                    <div class="swiper-button-next"><i class="bi bi-caret-right-fill"></i></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section><!-- main_banner -->
+
+
+            <div class="slogan">
+                <div>WE <span>MAKE</span> THINGS IN NEED WE <span>MAKE</span> THINGS IN NEED</div>
+                <div>WE <span>MAKE</span> THINGS IN NEED WE <span>MAKE</span> THINGS IN NEED</div>
+            </div>
+
+
+            <section id="about">
+                <div class="inner">
+                    <h2>ALL ABOUT BRO’S LIFE</h2>
+
+                    <ul class="about_list">
+                        <li>
+                            <img src="images/main/about_icon_bro.gif" alt="">
+                            <h3>ONLY FOR BRO</h3>
+                            <p>BRO들의 리얼보이스부터 출발했..<br>
+                                뭔소리야? 그냥, 쉽게 생각하자.<br>
+                                오직 형제들을 위한 제품. 브로앤팁스</p>
+                        </li>
+                        <li>
+                            <img src="images/main/about_icon_product.gif" alt="">
+                            <h3>UNCLE-FREE FORMULA</h3>
+                            <p>목욕탕에서 느껴지는 진한 스킨냄새..<br>
+                                내 피부도 진짜 아재일까?<br>
+                                20-28 취향을 고려한 브랜드.</p>
+                        </li>
+                        <li>
+                            <img src="images/main/about_icon_amorepacific.gif" alt="">
+                            <h3>QUALITY BY AMOREPACIFIC</h3>
+                            <p>국내 최고 수준의 품질검사로<br>
+                                탄생한 제품들은 효능뿐만 아니라<br>
+                                원료부터 검증까지, 끝-</p>
+                        </li>
+                    </ul>
+
+                    <div class="btn_more">
+                        <a href="#">BRO STORY</a>
+                    </div>
+                </div><!-- inner -->
+            </section><!-- new -->
+
+
+            <section id="new_tip">
+                <div class="new">
+                    <div class="new_prd">
+                        <div class="new_prd_txt">
+                            <h2>New</h2>
+                            <h3>SUPER CLEAR</h3>
+                            <p>미끌거림 없이 피지, 체취 제거</p>
+                            <div class="btn_more">
+                                <a href="#">VIEW DETAIL</a>
+                            </div>
+                        </div>
+                        <div class="new_prd_img">
+                            <div class="new_prd_bg">
+                                <svg viewBox="0 0 601 612.088">
+                                    <path fill="none" stroke="#0284e3" stroke-width="75" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-miterlimit="10"
+                                        d="M119.44,159.289l363.688-83.598L75,315.769l451-119.754c0,0-438.417,205.677-429.107,217.216s411.751-102.808,420.818-84.172 c9.066,18.636-378.123,181.202-378.123,181.202s373.204-111.324,381.41-98.033c8.205,13.291-215.624,133.313-241.506,123.611">
+                                    </path>
+                                </svg>
+                            </div>
+                            <img src="images/main/new_prd.png" alt="신제품 사진">
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <h2>Tip</h2>
+                    <a href="#">
+                        <img src="images/main/tips_01.jpg" alt="">
+                        <dl>
+                            <dt>브로앤팁스 메이킹 필름</dt>
+                            <dd>힝! 속았지? 형들 브로앤팁스에서 이렇게 진지한 필름을 만들지 몰랐지?
+                                나도 지금 당황스러워.. 그치만 생각보다 형들 굉장히 멋진 사람들이야.</dd>
+                        </dl>
+                    </a>
+                </div>
+            </section><!-- intro -->
+
+
+
+            <section id="favor">
+                <div class="inner">
+
+                    <h2>BRO’S FAVORITE!</h2>
+                    <ul class="tab">
+                        <li><button>#FACE</button></li>
+                        <li><button>#OTHER</button></li>
+                    </ul>
+                    <div class="favor_list">
+                        <div class="swiper favor_face">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_neverdry_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_neverdry.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_neverdry_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>NEVER DRY</dt>
+                                            <dd>올인원 건성용 로션</dd>
+                                            <dd class="price">32,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_neveroily_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_neveroily.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_neveroily_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>NEVER OILY</dt>
+                                            <dd>올인원 지성용 로션</dd>
+                                            <dd class="price">32,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_neverworry_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_neverworry.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_neverworry_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>NEVER WORRY</dt>
+                                            <dd>올인원 민감성 로션</dd>
+                                            <dd class="price">32,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_winterdefence_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_winterdefence.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_winterdefence_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>WINTER DEFENCE</dt>
+                                            <dd>초고보습 크림</dd>
+                                            <dd class="price">26,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper favor_other">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_pointclinic_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_pointclinic.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_pointclinic_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>POINT CLINIC</dt>
+                                            <dd>남성청결제</dd>
+                                            <dd class="price">28,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_superclear_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_superclear.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_superclear_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>SUPER CLEAR</dt>
+                                            <dd>바디워시</dd>
+                                            <dd class="price">18,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_superlight_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_superlight.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_superlight_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>SUPER LIGHT</dt>
+                                            <dd>워터프루프 데일리 선크림</dd>
+                                            <dd class="price">24,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide prd_item"
+                                    style="background-image:url(images/main/prd_monster_bg.gif);">
+                                    <a href="#">
+                                        <img src="images/main/prd_monster.png" alt="제품사진" class="thumb">
+                                        <img src="images/main/prd_monster_hover.png" alt="제품사진" class="over">
+                                        <dl>
+                                            <dt>MONSTER WASH</dt>
+                                            <dd>폼 클렌징</dd>
+                                            <dd class="price">14,000 KRW</dd>
+                                        </dl>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="btn_more">
+                        <a href="#">ALL PRODUCTS</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="insta">
+                <div class="inner">
+                    <h2>INSTAGRAM</h2>
+
+                    <ul class="insta_list">
+                        <li><a href="#"><img src="images/main/insta_01.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_02.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_03.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_04.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_05.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_06.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_07.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_08.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_09.jpg" alt="인스타그램 사진"></a></li>
+                        <li><a href="#"><img src="images/main/insta_10.jpg" alt="인스타그램 사진"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_top">
+                    <div class="footer_txt">
+                        <img src="images/common/logo_w.svg" alt="">
+                        <address>
+                            (주)아모레퍼시픽 <br>대표이사 안세홍 <br>사업자등록번호 106-86-43373<br class="txt_br">
+                            서울특별시 용산구 한강대로 100 <br>고객센터 080-023-5454 (수신자요금부담)
+                        </address>
+                    </div>
+                    <ul class="sns">
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_bottom">
+                    <p class="copy">&copy; AMOREPACIFIC CORPORATION. All rights reserved.</p>
+                    <div class="reddot"><img src="images/common/footer_reddot.svg" alt=""></div>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- wrap -->
+
+    <aside class="side">REAL TIPS FOR BRO, BRO&TIPS</aside>
+    <div class="gotop">TOP</div>
+
+
+    <script>
+
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+    </script>
+</body>
+
+</html>
