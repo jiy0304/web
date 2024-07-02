@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>견적문의</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="container">
+            <h2>견적문의</h2>
+            <p>귀하의 요청 사항과 참고 사이트를 꼼꼼히 검토한 후 최적의 견적가를 산출해 드리겠습니다.</p>
+
+            <div class="contact">
+                <form>
+                    <fieldset class="field_01">
+                        <legend>프로젝트 분야 선택</legend>
+                        <h3>프로젝트 분야 선택</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="kind1" checked>
+                                <label for="kind1">웹</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="kind2">
+                                <label for="kind2">모바일웹</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="kind3">
+                                <label for="kind3">반응형웹</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="kind4">
+                                <label for="kind4">쇼핑몰</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="kind5">
+                                <label for="kind5">솔루션개발</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="kind6">
+                                <label for="kind6">기타</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+
+                    <fieldset class="field_02">
+                        <legend>프로젝트 정보 입력</legend>
+                        <h3>프로젝트 정보 입력</h3>
+                        <div class="form_item_01">
+                            <h4>프로젝트 예산</h4>
+                            <select>
+                                <option selected disabled>예산을 선택해 주세요.</option>
+                                <option>1천만원 이하</option>
+                                <option>1천만원 ~ 5천만원</option>
+                                <option>5천만원 ~ 1억원</option>
+                                <option>1억원 ~ 3억원</option>
+                                <option>3억원 이상</option>
+                                <option>미정</option>
+                            </select>
+                        </div>
+
+                        <div class="form_item_02">
+                            <h4>프로젝트 기간</h4>
+                            <select>
+                                <option selected disabled>기간을 선택해 주세요.</option>
+                                <option>3개월</option>
+                                <option>6개월</option>
+                                <option>1년 이상</option>
+                                <option>직접 입력</option>
+                            </select>
+                        </div>
+
+                        <div class="form_item_03">
+                            <h4>현재사이트</h4>
+                            <input type="text" placeholder="홈페이지가 있으신 경우 주소(URL)을 입력해 주세요.">
+                        </div>
+
+                        <div class="form_item_04">
+                            <h4>참고사이트</h4>
+                            <input type="text" placeholder="참고사이트가 있으신 경우 주소(URL)을 입력해 주세요.">
+                        </div>
+
+                        <div class="form_item_05">
+                            <h4>문의내용 <em>*</em></h4>
+                            <textarea placeholder="문의 내용을 입력해 주세요." required></textarea>
+                        </div>
+
+                        <div class="form_item_06">
+                            <h4>첨부파일</h4>
+                            <input type="file" multiple
+                                accept=".pdf, .ppt, .pptx, .xls, .xlsx, .doc, .docx, .jpg, .png, .zip, .hwp">
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="field_03">
+                        <legend>의뢰자 정보 입력</legend>
+                        <h3>의뢰자 정보 입력</h3>
+                        <div class="form_item_07">
+                            <h4>회사명 <em>*</em></h4>
+                            <input type="text" placeholder="회사명을 입력해 주세요." required>
+                        </div>
+                        <div class="form_item_08">
+                            <h4>담당자/직급 <em>*</em></h4>
+                            <input type="text" placeholder="이름과 직급을 입력해 주세요." required>
+                        </div>
+                        <div class="form_item_09">
+                            <h4>연락처 <em>*</em></h4>
+                            <input type="text" placeholder="숫자만 입력해 주세요." required>
+                        </div>
+                        <div class="form_item_10">
+                            <h4>이메일</h4>
+                            <input type="text" placeholder="sample@sample.com">
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="privacy">
+                        <legend>개인정보동의</legend>
+
+                        <h3>개인정보동의서</h3>
+                        <div class="privacy_txt">
+                            <p>이용자들의 개인정보보호를 매우 중요시하며, 이용자가 회사의 서비스를 이용함과 동시에 온라인상에서 회사에 제공한 개인정보가 보호 받을 수 있도록 최선을 다하고
+                                있습니다.</p>
+
+                            <p>이에 회사는 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법규상의 개인정보보호
+                                규정 및 정보통신부가 제정한 개인정보보호지침을 준수하고 있습니다.</p>
+
+                            <p>회사는 개인정보 취급방침을 통하여 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지
+                                알려드립니다.</p>
+
+                            <p>개정된 정보통신망법 제22조 1항, 제24조의2 제1항, 제25조 1항의 내용을 통해의 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며
+                                개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드리고, 동의를 받기위해 아래 고지합니다.</p>
+
+                            <p>자세히 읽어보시고 동의 여부를 선택하여 주시기 바랍니다.</p>
+
+                            <p>귀하의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기하는 것을 원칙으로 합니다.<br>
+                                다만, 회사는 불량 회원의 부정한 이용의 재발을 방지하기 위해, 이용계약 해지일로부터 1년간 해당 회원의 주민등록번호를 보유할 수 있습니다.<br>
+                                그리고 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안
+                                회원정보를 보관합니다.</p>
+                        </div>
+
+
+                        <div class="btn_agree">
+                            <input type="radio" name="agree" id="no" checked><label for="no">동의하지 않음</label>
+                            <input type="radio" name="agree" id="yes"><label for="yes">동의함</label>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="btn">
+                        <legend>견적문의버튼</legend>
+                        <input type="submit" value="견적문의">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div><!-- wrap -->
+</body>
+
+</html>
