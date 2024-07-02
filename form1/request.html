@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="container">
+            <h2>Request</h2>
+
+            <div class="request">
+                <form class="request_form">
+                    <fieldset>
+                        <legend>프로젝트 내용 작성</legend>
+
+                        <div class="field_01">
+                            <h3>프로젝트 형태</h3>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="kind1">
+                                    <label for="kind1">웹</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="kind2">
+                                    <label for="kind2">모바일웹</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="kind3">
+                                    <label for="kind3">반응형웹</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="kind4">
+                                    <label for="kind4">쇼핑몰</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="kind5">
+                                    <label for="kind5">솔루션개발</label>
+                                </li>
+                            </ul><!-- field_01 -->
+                        </div>
+
+                        <div class="field_02">
+                            <h3>프로젝트 성격</h3>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="sort" id="use1">
+                                    <label for="use1">신규구축</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort" id="use2">
+                                    <label for="use2">리뉴얼</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="sort" id="use3">
+                                    <label for="use3">유지보수</label>
+                                </li>
+                            </ul>
+                        </div><!-- field_01 -->
+
+                        <div class="field_03">
+                            <div>
+                                <h3>프로젝트 예산</h3>
+                                <select>
+                                    <option disabled selected>예산을 선택해 주세요!</option>
+                                    <option>1천만원 이하</option>
+                                    <option>1천만원 ~ 5천만원</option>
+                                    <option>5천만원 ~ 1억원</option>
+                                    <option>1억원 ~ 3억원</option>
+                                    <option>3억원 이상</option>
+                                    <option>미정</option>
+                                </select>
+                            </div>
+                            <div>
+                                <h3>프로젝트 기간</h3>
+                                <select>
+                                    <option disabled selected>기간을 선택해 주세요!</option>
+                                    <option>3개월</option>
+                                    <option>6개월</option>
+                                    <option>1년 이상</option>
+                                    <option>직접 입력</option>
+                                </select>
+                            </div>
+                        </div><!-- field_03 -->
+
+                        <div class="field_04">
+                            <h3>프로젝트 주요 내용</h3>
+                            <div>
+                                <input type="text" placeholder="프로젝트 이름" required>
+                                <textarea required placeholder="배경, 파견 인력 필요 유무 등 주요한 내용을 알려주세요."></textarea>
+                                <input id="attach" type="file" multiple accept=".pdf, .jpg, .png, .zip, .hwp">
+                                <label for="attach">첨부파일</label>
+                            </div>
+                        </div><!-- field_04 -->
+                    </fieldset>
+
+
+                    <div class="privacy">
+                        <h3>개인정보동의서</h3>
+                        <div class="privacy_txt">
+                            <p>이용자들의 개인정보보호를 매우 중요시하며, 이용자가 회사의 서비스를 이용함과 동시에 온라인상에서 회사에 제공한 개인정보가 보호 받을 수 있도록 최선을 다하고
+                                있습니다.</p>
+
+                            <p>이에 회사는 통신비밀보호법, 전기통신사업법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가 준수하여야 할 관련 법규상의 개인정보보호
+                                규정 및 정보통신부가 제정한 개인정보보호지침을 준수하고 있습니다.</p>
+
+                            <p>회사는 개인정보 취급방침을 통하여 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지
+                                알려드립니다.</p>
+
+                            <p>개정된 정보통신망법 제22조 1항, 제24조의2 제1항, 제25조 1항의 내용을 통해의 이용자들이 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며
+                                개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드리고, 동의를 받기위해 아래 고지합니다.</p>
+
+                            <p>자세히 읽어보시고 동의 여부를 선택하여 주시기 바랍니다.</p>
+
+                            <p>귀하의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기하는 것을 원칙으로 합니다.<br>
+                                다만, 회사는 불량 회원의 부정한 이용의 재발을 방지하기 위해, 이용계약 해지일로부터 1년간 해당 회원의 주민등록번호를 보유할 수 있습니다.<br>
+                                그리고 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안
+                                회원정보를 보관합니다.</p>
+                        </div><!-- privacy_txt -->
+                        <fieldset class="agree">
+                            <legend>개인정보동의 안내</legend>
+                            <input type="radio" name="agree" id="no" checked>
+                            <label for="no">동의하지 않음</label>
+                            <input type="radio" name="agree" id="yes">
+                            <label for="yes">동의함</label>
+                        </fieldset>
+                    </div><!-- privacy -->
+
+
+                    <fieldset class="btn">
+                        <legend>신청 취소 버튼</legend>
+                        <input type="submit" value="신청">
+                        <input type="reset" value="취소">
+                    </fieldset>
+                </form><!-- request_form -->
+
+            </div><!-- request -->
+        </div><!-- container -->
+    </div><!-- wrap -->
+</body>
+
+</html>
