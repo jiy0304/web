@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+
+/* sub */
+.sub_visual { color: #FFF; text-align: center; }
+.sub_visual .inner { padding: 250px 0 150px; }
+.sub_visual h2 { font-size: 4rem; }
+
+.bg_brand { background: url("../images/sub/bg_brand.jpg") no-repeat center / cover; }
+.bg_prd { background: url("../images/sub/bg_prd.jpg") no-repeat center / cover; }
+.bg_store { background: url("../images/sub/bg_store.jpg") no-repeat center / cover; }
+.bg_cs { background: url("../images/sub/bg_cs.jpg") no-repeat center / cover; }
+
+.breadcrumbs { padding: 20px 0 0; display: flex; gap: 40px; justify-content: center; align-items: flex-end; }
+.breadcrumbs li:not(:first-child)::before { content: ""; display: block; width: 6px; height: 6px; border-top: 2px solid #fff; border-right: 2px solid #fff; transform: translate(-25px,16px) rotate(45deg); }
+
+.lnb { background: rgba(0,0,0,0.3); backdrop-filter: blur(10px); }
+.lnb ul { display: flex; justify-content: center; }
+.lnb ul li a { display: block; padding: 20px 100px; }
+.lnb ul li a.on { background: #fff; color: #000; }
+
+@media (max-width:1024px) {
+    .sub_visual .inner { padding: 100px 0; }
+    .sub_title h2 { font-size: 3rem; }
+    .lnb ul li a { padding: 15px; }
+}
+
+
+/* main */
+.main { padding: 200px 0; }
+.main h3 { display: none; }
+
+
+/* notice */
+.notice .inner { max-width: 1440px; }
+.notice .notice_search div { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 5px; }
+.notice .notice_search div * { font-family: var(--main-font); font-size: 1.4rem; height: 40px; }
+.notice .notice_search select { width: 100px; background: url('../images/sub/chevron-down.svg') no-repeat right 10px center; appearance: none; padding: 0 10px; border: 1px solid #CCC; }
+.notice .notice_search input[type="text"] { width: 200px; border: 1px solid #CCC; padding: 5px; }
+.notice .notice_search input[type="submit"] { padding: 10px 20px; color:#FFF; background: var(--main-color); }
+
+.notice table { margin: 50px 0; }
+.notice table tr > :nth-child(1) { width: 10%; }
+.notice table tr > :nth-child(2) { width: 65%; }
+.notice table tr > :nth-child(3) { width: 15%; }
+.notice table tr > :nth-child(4) { width: 10%; }
+
+.notice table tr { transition: all 0.5s; }
+.notice table tr:nth-child(n+2):hover { background: #eee; }
+
+.notice table tr th { padding: 20px; border-top: 1px solid #666; border-bottom: 1px solid #ccc; }
+.notice table tr td { padding: 20px; border-bottom: 1px solid #eee; text-align: center; }
+.notice table tr td:nth-child(2) { text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 0; }
+
+.notice .paging { display: flex; justify-content: center; gap: 5px; align-items: center; }
+.notice .paging li a { display: block; width: 35px; height: 35px; padding: 5px; text-align: center; border: 1px solid #ddd; }
+.notice .paging li:nth-child(1) a { border: 0; width: 20px; font-size: 0; background: url('../images/sub/paging_first.png') no-repeat center; }
+.notice .paging li:nth-child(2) a { border: 0; width: 20px; font-size: 0; background: url('../images/sub/paging_prev.png') no-repeat center; }
+.notice .paging li:nth-last-child(2) a { border: 0; width: 20px; font-size: 0; background: url('../images/sub/paging_next.png') no-repeat center; }
+.notice .paging li:nth-last-child(1) a { border: 0; width: 20px; font-size: 0; background: url('../images/sub/paging_last.png') no-repeat center; }
+.notice .paging .on { border: 1px solid var(--main-color); background: var(--main-color); color: #FFF; }
+
+.test { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+@media (max-width:1024px) {
+    .main { padding: 100px 0; }
+    .notice table { font-size: 1.4rem; }
+    .notice table tr > :nth-child(1) { display: none; }
+    .notice table tr > :nth-child(2) { width: 85%; }
+    .notice table tr > :nth-child(3) { width: 15%; }
+    .notice table tr > :nth-child(4) { display: none; }
+}
+
+@media (max-width:768px) {
+    .notice .notice_search select { width: 100%; }
+    .notice .notice_search input[type="text"] { width: calc(80% - 5px); }
+    .notice .notice_search input[type="submit"] { width: 20%; }
+}
+
+
+/* brand */
+.brand .inner { max-width: 1440px; }
+.brand h4 { font-size: 3rem; padding: 0 0 10px; font-family: var(--sub-font); font-weight: 400; }
+.brand h5 { font-size: 2rem; padding-bottom: 30px; color: var(--sub-color); font-family: var(--sub-font); font-weight: 400; }
+.story { display: flex; gap: 5vw; align-items: center; flex-wrap: wrap; }
+.story .story_img { width: 500px; }
+.story .story_img img { width: 100%; }
+.story .story_txt { width: calc((100% - 500px) - 5vw); }
+.story .story p { color: #999; padding-bottom: 20px; }
+.brand .location { margin-top: 100px; }
+
+@media (max-width:1024px) {
+    .story .story_img { width: 100%; }
+    .story .story_txt { width: 100%; }
+}
+
+
+/* product */
+.prd .inner { max-width: 1440px; }
+.product h3 { font-size: 3rem; padding: 10px 0 50px; }
+.product .product_list { display: flex; gap: 20px; flex-wrap: wrap; }
+.product .product_list li { width: calc((100% - 60px) / 4); background: #EEE; text-align: center; position: relative; padding: 0 0 50px; }
+.product .product_list li img { width: 100%; }
+.product .product_list li .overbox { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; opacity: 0; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.9); width: 100%; height: 100%; transition: all 0.5s; }
+.product .product_list li:hover .overbox { opacity: 1; }
+.product .prd_name { font-size: 2rem; }
+.product .price { font-size: 3rem; color: #FFF; font-weight: 700; }
+.product .sale { font-size: 2rem; color: #666; text-decoration: line-through; }
+.product a.cart { width: 50%; padding: 10px 0; background: #fd5d5d; color:#FFF; }
+.product a.more { width: 50%; padding: 10px 0; background: #FFF; }
+
+
+@media (max-width:1024px) {
+    .product .product_list li { width: calc((100% - 20px) / 2); }
+}
+
+
+/* store */
+.store .inner { max-width: 1440px; }
+.store .store_list { display: flex; flex-wrap: wrap; gap: 20px; }
+.store .store_list li { width: calc((100% - 20px) / 2); background: #EEE; }
+.store .store_list li img { width: 100%; }
+.store .store_list li dl { padding: 30px 40px; }
+.store .store_list li dl dt { font-size: 2.5rem; font-weight: 700; }
+.store .store_list li dl dd { color:#999; padding: 10px 0 0; }
+
+@media (max-width:1024px) {
+    .store .store_list li { width: 100%; }
+    .store .store_list li dl dt { font-size: 2rem; }
+}
+
+
+
+
