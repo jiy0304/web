@@ -22,7 +22,7 @@
       margin: 0 auto;
       list-style: none;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4,1fr);
       gap: 5vw;
       align-items: flex-start;
     }
@@ -38,7 +38,7 @@
 
     @media (max-width:1024px) {
       ul {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,1fr);
       }
     }
   </style>
@@ -53,7 +53,7 @@
       </a>
     </li>
     <li>
-      <a href="https://jiy0304.github.io/web/startup/" target="_blank">
+      <a href="/startup/index.html" target="_blank">
         <img src="img/startup.png" alt="창업진흥원">
       </a>
     </li>
