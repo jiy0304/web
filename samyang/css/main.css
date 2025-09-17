@@ -67,10 +67,10 @@ a.btn_more { display: inline-block; background: url(../images/ico_arrow.svg) no-
 .business ul li { position: relative; }
 .business ul li img { width: 100%; }
 .business ul li div { position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; text-align: center; color: #fff; }
-/* .business ul li div h3 { transition: all 0.5s; transform: translateY(30px); }
+.business ul li div h3 { transition: all 0.5s; transform: translateY(30px); }
 .business ul li div a { transition: all 0.5s 0.1s; transform: translateY(30px); opacity: 0; }
 .business ul li:hover div h3 { transform: translateY(0); }
-.business ul li:hover div a { transform: translateY(0); opacity: 1; } */
+.business ul li:hover div a { transform: translateY(0); opacity: 1; }
 
 @media (max-width:1000px) {
   .business { padding: 100px 0; }
@@ -83,12 +83,12 @@ a.btn_more { display: inline-block; background: url(../images/ico_arrow.svg) no-
 /* history */
 .history { color: #fff; text-transform: uppercase; font-family: "SamyangNeo"; background: url(../images/history_bg.jpg) no-repeat center / cover; text-align: center; height: 500px; display: flex; align-items: center; }
 .history p { margin: 10px 0; }
-/* .history h2 { transition: all 0.5s; transform: translateY(40px); }
+.history h2 { transition: all 0.5s; transform: translateY(40px); }
 .history p { transition: all 0.5s 0.1s; transform: translateY(40px); margin: 10px 0; }
 .history a { transition: all 0.5s 0.2s; transform: translateY(40px); opacity: 0; }
 .history:hover h2 { transform: translateY(0); }
 .history:hover p { transform: translateY(0); }
-.history:hover a { transform: translateY(0); opacity: 1; } */
+.history:hover a { transform: translateY(0); opacity: 1; }
 
 @media (max-width:1000px) {
   .history h2 { transform: translateY(0); }
@@ -105,8 +105,8 @@ a.btn_more { display: inline-block; background: url(../images/ico_arrow.svg) no-
 .company .inner > div:hover img { transform: scale(1.2,1.2); }
 .company .company_txt { position: absolute; left: 0; top: 0; color: #fff; width: 100%; padding: 50px; }
 .company .company_txt p { padding: 10px 0 20px; font-size: 20px; }
-/* .company .company_txt a { transition: all 0.5s; transform: translateY(40px); opacity: 0; }
-.company .inner > div:hover .company_txt a { transition: all 0.5s; transform: translateY(0); opacity: 1; } */
+.company .company_txt a { transition: all 0.5s; transform: translateY(40px); opacity: 0; }
+.company .inner > div:hover .company_txt a { transition: all 0.5s; transform: translateY(0); opacity: 1; }
 
 @media (max-width:800px) {
   .company { margin: 100px 0; }
@@ -127,5 +127,6 @@ a.btn_more { display: inline-block; background: url(../images/ico_arrow.svg) no-
 @media (max-width:1000px) {
   #footer { padding: 70px 0; font-size: 14px; }
 }
+
 
 
